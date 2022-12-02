@@ -12,10 +12,10 @@ const Home = () => {
 	}
 
 	return (
-		<div className="text-center">
-			<h1>Todo List</h1>
+		<div className="text-center ">
+			{/* <h1>Todo List</h1> */}
 			<input type="text" id="task" onChange={(e) => {setTaskName(e.target.value)}}/>
-			<button onClick={addTask}>Add</button>
+			<button onClick={addTask}>Do it!</button>
 
 			{taskList.map((task)=> {
 				return <Task taskName={task.taskName} />
